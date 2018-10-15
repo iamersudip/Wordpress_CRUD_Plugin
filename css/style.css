@@ -1,0 +1,31 @@
+.wqmessage {
+  color: red;
+  font-size: 16px;
+}
+#wqsubmit_message {
+  color: green;
+  font-size: 16px;
+}
+.wqtextfield {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.wqsubmit_button {
+  background-color: lightseagreen;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+}
+.wqlabel {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.wqpage_heading {
+  font-size: 25px;
+  text-align: center;
+}
