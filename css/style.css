@@ -2,8 +2,7 @@
   color: red;
   font-size: 16px;
 }
-#wqsubmit_message {
-  color: green;
+.wqsubmit_message {
   font-size: 16px;
 }
 .wqtextfield {

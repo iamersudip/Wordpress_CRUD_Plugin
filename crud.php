@@ -54,8 +54,8 @@ require_once(CRUD_PLUGIN_PATH.'/ajax/ajax_action.php');
 add_action('admin_menu', 'my_menu_pages');
 function my_menu_pages(){
     add_menu_page('CRUD', 'CRUD', 'manage_options', 'new-entry', 'my_menu_output' );
-    add_submenu_page('new-entry', 'New Entry', 'New Entry', 'manage_options', 'new-entry', 'my_menu_output' );
-    add_submenu_page('new-entry', 'View Entries', 'View Entries', 'manage_options', 'view-entries', 'my_submenu_output' );
+    add_submenu_page('new-entry', 'CRUD Application', 'New Entry', 'manage_options', 'new-entry', 'my_menu_output' );
+    add_submenu_page('new-entry', 'CRUD Application', 'View Entries', 'manage_options', 'view-entries', 'my_submenu_output' );
 }
 
 function my_menu_output() {

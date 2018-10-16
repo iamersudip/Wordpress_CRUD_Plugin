@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
   $(document).on('submit','#entry_form', function(e) {
     e.preventDefault();
     $('.wqmessage').html('');
-    $('#wqsubmit_message').html('');
+    $('.wqsubmit_message').html('');
 
     var wqtitle = $('#wqtitle').val();
     var wqdescription = $('#wqdescription').val();
@@ -29,8 +29,13 @@ jQuery(document).ready(function(){
 			  processData:false,
         success: function(response) {
           var res = JSON.parse(response);
-          $('#wqsubmit_message').html(res.message);
-          $('#entry_form')[0].reset();
+          $('.wqsubmit_message').html(res.message);
+          if(res.rescode!='404') {
+            $('#entry_form')[0].reset();
+            $('.wqsubmit_message').css('color','green');
+          } else {
+            $('.wqsubmit_message').css('color','red');
+          }
         }
       });
     } else {
@@ -41,7 +46,7 @@ jQuery(document).ready(function(){
   $(document).on('submit','#update_form', function(e) {
     e.preventDefault();
     $('.wqmessage').html('');
-    $('#wqsubmit_message').html('');
+    $('.wqsubmit_message').html('');
 
     var wqtitle = $('#wqtitle').val();
     var wqdescription = $('#wqdescription').val();
@@ -67,7 +72,12 @@ jQuery(document).ready(function(){
 			  processData:false,
         success: function(response) {
           var res = JSON.parse(response);
-          $('#wqsubmit_message').html(res.message);
+          $('.wqsubmit_message').html(res.message);
+          if(res.rescode!='404') {
+            $('.wqsubmit_message').css('color','green');
+          } else {
+            $('.wqsubmit_message').css('color','red');
+          }
         }
       });
     } else {

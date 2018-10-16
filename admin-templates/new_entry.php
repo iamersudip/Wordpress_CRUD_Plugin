@@ -26,7 +26,7 @@ if(isset($_REQUEST['entryid']) && $_REQUEST['entryid']!='') {
 
         <div><input type="submit" class="wqsubmit_button" id="wqedit" value="Edit" /></div>
         <div>&nbsp;</div>
-        <div id="wqsubmit_message"></div>
+        <div class="wqsubmit_message"></div>
 
       </form>
     </div>
@@ -57,7 +57,7 @@ if(isset($_REQUEST['entryid']) && $_REQUEST['entryid']!='') {
 
       <div><input type="submit" class="wqsubmit_button" id="wqadd" value="Add" /></div>
       <div>&nbsp;</div>
-      <div id="wqsubmit_message"></div>
+      <div class="wqsubmit_message"></div>
 
     </form>
   </div>
